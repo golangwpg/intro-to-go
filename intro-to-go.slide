@@ -1,4 +1,4 @@
-An Intro to Golang
+An Introduction to Golang
 Golang Wpg Meetup #1
 15:04 29 Mar 2017
 
@@ -8,22 +8,33 @@ Mark St.Godard
 Andrew Hoff
 @therealhoffer
 
-* Welcome to Golang WPG Meetup #1!!!
+* Welcome to Golang WPG Meetup #1
 
 .image /img/small-golangwpg.jpg
 
 * Thanks to our sponsors!
 .image /img/boldlogo.png
 
+* Agenda
+
+- What is Go?
+
+- Getting started
+
+- Basics
+
+- Tooling
+
+
 * What is Go?
 
-Programming language developed by Google (2009)
+- Programming language developed by Google (2009)
 
-Statically typed
+- Statically typed
 
-Compiled
+- Compiled
 
-Concurrent
+- Concurrent
 .image /img/gopherbw.png _ 400
 
 * What is Go?
@@ -35,8 +46,65 @@ Lots of popular projects and companies using:
 - Cloud Foundry
 .image /img/gopherbw.png _ 400
 
-* Let me see code
 
-Run the command below:
+* Getting Started
 
-.play intro-to-go/hello-wpg.go /func main/,/^}/
+- Download at [[https://https://golang.org/dl/]]
+
+.image /img/downloads.png _ 1000
+
+- Go 1.8 latest stable version
+
+- macOS
+    brew install go
+
+* What is the GOPATH?
+
+- The *GOPATH* is an environment variable the specifies where your source code, other libraries/packages  and binaries will be found
+- Go 1.8 sets a default GOPATH
+- *$HOME/go* (unix-based)
+- *%USERPROFILE%/go* (windows)
+
+- *Example:*
+
+    /Users/mark/go
+    ├── bin
+    │   └── helloworld
+    └── src
+        └── github.com
+            └── markstgodard
+                └── helloworld
+                    └── main.go
+
+
+* Let me see code already!
+
+main.go
+
+.play intro-to-go/hello-wpg.go
+
+* Packages
+
+- Go programs are comprised of one or more packages
+
+- *main* is a special package which is used for running a program
+
+.code intro-to-go/hello-wpg-main.go
+
+* Import
+
+- To use a package in your program, you import it
+
+.code intro-to-go/hello-wpg-package.go
+
+* Import
+
+- Multiple imports can be grouped into a single import statement
+.code intro-to-go/hello-wpg-multi-package.go
+
+
+* Building
+
+- Go Build
+
+    go build
