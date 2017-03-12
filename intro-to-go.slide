@@ -1,0 +1,42 @@
+An Intro to Golang
+Golang Wpg Meetup #1
+15:04 29 Mar 2017
+
+Mark St.Godard
+@markstgodard
+
+Andrew Hoff
+@therealhoffer
+
+* Welcome to Golang WPG Meetup #1!!!
+
+.image /img/small-golangwpg.jpg
+
+* Thanks to our sponsors!
+.image /img/boldlogo.png
+
+* What is Go?
+
+Programming language developed by Google (2009)
+
+Statically typed
+
+Compiled
+
+Concurrent
+.image /img/gopherbw.png _ 400
+
+* What is Go?
+Runs on Linux, macOS, Windows and more
+
+Lots of popular projects and companies using:
+- Docker
+- Kubernetes
+- Cloud Foundry
+.image /img/gopherbw.png _ 400
+
+* Let me see code
+
+Run the command below:
+
+.play intro-to-go/hello-wpg.go /func main/,/^}/
