@@ -102,9 +102,100 @@ main.go
 - Multiple imports can be grouped into a single import statement
 .code intro-to-go/hello-wpg-multi-package.go
 
+* Functions
 
-* Building
+- Functions...
+
+* Exporting
+
+- TODO: explain exporting naming
+
+* Multiple return types
+
+- TODO: explain and why its important
+
+
+* Defining Variables
+
+- TODO: explain how
+- package or function level
+- short vs. long declaration
+
+
+* Types
+
+- TODO: explain some of the basic types
+- zero values (0 for numeric, false for boolean, "" for string)
+- type inference ( i := 23  is an int,   3.21 is a float, etc.)
+
+* Loops
+
+- for, range
+
+* Conditionals
+
+- if, and if in short form
+- if, else
+- switch
+
+
+* Defer
+
+- TODO: explain how defer is so awesome
+
+* Pointers
+
+- Explain how go has pointers
+- and how to use
+
+* Structs
+
+- TODO
+
+* Arrays and Slices
+
+- TODO and literals
+
+
+* Maps
+
+- TODO and literals
+
+* Functions as values and closures
+
+- TODO: explain how functions can be passed as args, returns
+- TODO: explain how functions closures work?
+
+* Methods
+- methods are just a function with a receiver
+- can be value or pointer receivers
+
+* Interfaces
+- TODO: explain how interfaces work, implicit
+- interface{} special empty interface
+
+
+* Goroutines
+- TODO:
+
+
+* Channels
+- TODO:
+
+* Tooling
 
 - Go Build
 
     go build
+
+- Go get
+
+    go get
+
+- Go fmt
+
+    go fmt
+
+- Go test
+
+    go test
