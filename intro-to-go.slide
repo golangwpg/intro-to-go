@@ -19,9 +19,9 @@ Andrew Hoff
 
 - What is Go?
 
-- Getting started
+- Get Setup
 
-- Basics
+- Basics of the Language
 
 - Tooling
 
@@ -47,7 +47,7 @@ Lots of popular projects and companies using:
 .image /img/gopherbw.png _ 400
 
 
-* Getting Started
+* Getting Setup
 
 - Download at [[https://https://golang.org/dl/]]
 
@@ -77,7 +77,7 @@ Lots of popular projects and companies using:
                     └── main.go
 
 
-* Let me see code already!
+* Let me see some code already!
 
 main.go
 
@@ -104,11 +104,28 @@ main.go
 
 * Functions
 
-- Functions...
+- Functions can have zero or more input parameters
+- parameter syntax is *name*, then *type*
+- return type(s) defined after parameters
+
+.play intro-to-go/function.go
 
 * Exporting
 
-- TODO: explain exporting naming
+- Names of functions, constants, etc. are "exported" if they begin with a capital letter
+- names that start with a lowercase are not exported
+
+*circle/circle.go*
+.code intro-to-go/circle.go
+
+* Exporting
+
+- Package "circle" exports function "Area" but not "diameter"
+- import circle package and use Area function
+- Trying to call function "diameter" would result in a compile-type error
+
+*main.go*
+.code intro-to-go/function_circle.go
 
 * Multiple return types
 
