@@ -1,7 +1,7 @@
-package main
+package main // HL
 
-import "fmt"
+import "fmt" // HL
 
-func main() {
-	fmt.Println("Hello Golang Winnipeg!")
-}
+func main() { // HL
+	fmt.Println("Hello Golang Winnipeg!") // HL
+} // HL

@@ -23,7 +23,10 @@ Andrew Hoff
 
 - Basics
 
-- Toolchain (go build, fmt, vet)
+- Goroutines & Channels
+
+- Go Toolchain
+
 
 * What is Go?
 
@@ -78,7 +81,7 @@ Lots of popular projects and companies using:
 
 * Let me see some code already!
 
-main.go
+*main.go*
 
 .play intro-to-go/hello-wpg.go
 
