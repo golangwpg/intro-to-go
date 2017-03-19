@@ -19,12 +19,11 @@ Andrew Hoff
 
 - What is Go?
 
-- Get Setup
+- Getting Setup
 
-- Basics of the Language
+- Basics
 
-- Tooling
-
+- Toolchain (go build, fmt, vet)
 
 * What is Go?
 
@@ -97,11 +96,6 @@ main.go
 
 .code intro-to-go/hello-wpg-package.go
 
-* Import
-
-- Multiple imports can be grouped into a single import statement
-.code intro-to-go/hello-wpg-multi-package.go
-
 * Functions
 
 - Functions can have zero or more input parameters
@@ -129,59 +123,74 @@ main.go
 
 * Multiple return types
 
-- TODO: explain and why its important
+- Go supports multiple returns types and typically it is used for returning errors
+- An *error* in Go is an interface that represents an error that has occurred
+
+.code intro-to-go/circle_errors.go
+
+* Errors
+
+- Typical Go code will return an *error* as the last return type and handle the error appropriately
+.code intro-to-go/function_circle_errors.go
+
+* Variables
+
+- Declaration and assignment:
+.code intro-to-go/variables_long.go
+
+- or
+.code intro-to-go/variables_long_oneline.go
+
+- Short form assignment (type inference):
+.code intro-to-go/variables_short.go
 
 
-* Defining Variables
+* Standard types
 
-- TODO: explain how
-- package or function level
-- short vs. long declaration
+- bool
+- string
+- int, int8, int16, int32, int64
+- float32, float64
+- byte (uint8)
 
+- uint, uint8, uint16, uint32, uint64
+- rune (int32)
+- complex64, complex128
 
-* Types
+* Arrays
 
-- TODO: explain some of the basic types
-- zero values (0 for numeric, false for boolean, "" for string)
-- type inference ( i := 23  is an int,   3.21 is a float, etc.)
+- arrays are fixed size (cannot be resized)
+.code intro-to-go/arrays.go
 
-* Loops
+- array literal
+.code intro-to-go/arrays2.go
 
-- for, range
+* Slices
 
-* Conditionals
+- slices can be used to have resizable arrays
+- technically they are references to underlying arrays
 
-- if, and if in short form
-- if, else
-- switch
+.code intro-to-go/slices1.go
 
-
-* Defer
-
-- TODO: explain how defer is so awesome
-
-* Pointers
-
-- Explain how go has pointers
-- and how to use
-
-* Structs
-
-- TODO
-
-* Arrays and Slices
-
-- TODO and literals
+- literal
+.code intro-to-go/slices2.go
 
 
 * Maps
 
-- TODO and literals
+- create a map, length and "range" over entries
 
-* Functions as values and closures
+.play intro-to-go/maps.go
 
-- TODO: explain how functions can be passed as args, returns
-- TODO: explain how functions closures work?
+* Maps
+
+- add, update, remove entries
+
+.play intro-to-go/maps2.go
+
+* Structs
+
+- TODO
 
 * Methods
 - methods are just a function with a receiver
@@ -216,3 +225,26 @@ main.go
 - Go test
 
     go test
+
+
+* Extra stuff
+
+* Loops
+
+- for, range
+
+* Conditionals
+
+- if, and if in short form
+- if, else
+- switch
+
+
+* Defer
+
+- TODO: explain how defer is so awesome
+
+* Pointers
+
+- Explain how go has pointers
+- and how to use

@@ -1,9 +1,9 @@
 package circle // HL
 
-const PI = 3.14
+const Pi = 3.14
 
 func Area(radius float64) float64 { // HL
-	return PI * radius * radius
+	return Pi * radius * radius
 }
 
 func diameter(radius float64) float64 { // HL

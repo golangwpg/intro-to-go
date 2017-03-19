@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/markstgodard/intro-go/circle" // HL
+	"github.com/markstgodard/intro/circle" // HL
 )
 
 func main() {
