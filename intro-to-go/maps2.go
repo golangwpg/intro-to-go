@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	ageMap := map[string]int{"Mark": 43, "Andrew": 28} // HL
+	ageMap := map[string]int{"Mark": 43, "Andrew": 26} // HL
 
 	// update Andrew
-	ageMap["Andrew"] = 29 // HL
+	ageMap["Andrew"] = 25 // HL
 
 	// remove Mark
 	delete(ageMap, "Mark") // HL

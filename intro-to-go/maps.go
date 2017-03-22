@@ -7,7 +7,7 @@ func main() {
 	// create map
 	ageMap := map[string]int{ // HL
 		"Mark":   43,
-		"Andrew": 28,
+		"Andrew": 26,
 	} // HL
 
 	// length of map

@@ -207,7 +207,8 @@ Lots of popular projects and companies using:
 
 - Yes, Go has pointers :)
 - *&* will create a pointer (think "address of")
-- *** will deference a pointer
+- *** will de-reference a pointer (think "value at address being pointed to")
+- pointers are transparently de-referenced (you don't have to *pointer to get/modify the value being pointed to)
 
 .code intro-to-go/struct_pointer.go
 
