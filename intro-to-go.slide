@@ -1,12 +1,14 @@
 An Introduction to Golang
 Golang Wpg Meetup #1
-15:04 29 Mar 2017
+29 Mar 2017
 
 Mark St.Godard
 @markstgodard
+https://github.com/markstgodard
 
 Andrew Hoff
 @therealhoffer
+https://github.com/andrewhoff
 
 * Welcome to Golang WPG Meetup #1
 
@@ -46,6 +48,11 @@ Lots of popular projects and companies using:
 - Docker
 - Kubernetes
 - Cloud Foundry
+- Hashicorp
+- InfluxDB
+- CockroachDB
+- Dropbox
+
 .image /img/gopherbw.png _ 400
 
 
@@ -55,7 +62,7 @@ Lots of popular projects and companies using:
 
 .image /img/downloads.png _ 1000
 
-- Go 1.8 latest stable version
+- Go 1.8 (latest stable version)
 
 - macOS
     brew install go
@@ -207,10 +214,16 @@ Lots of popular projects and companies using:
 
 - Yes, Go has pointers :)
 - *&* will create a pointer (think "address of")
-- *** will de-reference a pointer (think "value at address being pointed to")
-- pointers are transparently de-referenced (you don't have to *pointer to get/modify the value being pointed to)
+- *** will de-reference a pointer ("get the value at address")
 
 .code intro-to-go/struct_pointer.go
+
+* Pointers
+
+- pointers are transparently de-referenced
+- alternatively....
+
+.play intro-to-go/struct_pointer2.go
 
 * Methods
 - methods are just a function with a receiver
