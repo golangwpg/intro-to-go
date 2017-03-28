@@ -300,6 +300,7 @@ Lots of popular projects and companies using:
     go vet <package>
 
 * Live Demo???
+.image /img/gopher_machinegun.jpg _ 550
 
 * What's Next For You?
 
@@ -313,6 +314,7 @@ Official Go Talks - [[https://talks.golang.org/]]
 Cool libraries to spark some project ideas - [[http://libs.club/golang/]]
 
 * What's Next for the Meetup?
+
 - Sponsorship?
 - Alternate Locations?
 - Topics? Speakers?
