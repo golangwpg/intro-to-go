@@ -251,13 +251,12 @@ Lots of popular projects and companies using:
 - Its not uncommon for a Go application to have thousands of goroutines
 - Goroutines are started with the keyword *go* kinda feels like ...
     myfancyscript.sh &
-- Can't always just "background and forget it"
 
 * Goroutines
 
 .code intro-to-go/goroutine.go
 
-* Channels
+* Channels (do know the mkfifo man???)
 - channels are a safe-way to send / receive data between goroutines
 - handles synchronization without having to explicitly lock
   ch <- data // send data to channel
