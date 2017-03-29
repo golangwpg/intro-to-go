@@ -226,18 +226,19 @@ Lots of popular projects and companies using:
 .play intro-to-go/struct_pointer2.go
 
 * Methods
-- methods are just a function with a receiver
+- a method is just a function with a receiver
 - can be *value* or *pointer* receivers
+- when to use which? [[https://github.com/golang/go/wiki/CodeReviewComments#receiver-type]]
 
 .code intro-to-go/circle_struct.go
 
 * Methods
-- methods are just a function with a receiver
+- a method is just a function with a receiver
 
 .code intro-to-go/circle_struct_use.go
 
 * Interfaces
-- Unlike Java and some other languages, Go has "implicit" interfaces
+- Unlike Java and some other languages, Go has "implicitly implemented" interfaces
 - does not have to explictly state a type implements an interface
 - You will get a compile-time error if a type does not implement the interface
 
@@ -248,7 +249,9 @@ Lots of popular projects and companies using:
 - Go provides a powerful concurrency model
 - Goroutines are like lightweight threads
 - Its not uncommon for a Go application to have thousands of goroutines
-- Goroutines are started with the keyword *go*
+- Goroutines are started with the keyword *go* kinda feels like ...
+    myfancyscript.sh &
+- Can't always just "background and forget it"
 
 * Goroutines
 
@@ -261,7 +264,7 @@ Lots of popular projects and companies using:
   data :- <- ch // read from channel
 
 - channels are typed and need to be created before using
-- channels can be *buffered* or *unbuffered*
+- channels can be *buffered* or *unbuffered* (basically set the channel size)
 - unbuffered channels will block the sender until the receiver receives the value
 - buffered channels will only block the sender if the buffer is full
 
